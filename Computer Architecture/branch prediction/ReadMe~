@@ -1,0 +1,37 @@
+To run the simulator:
+
+First, extract the zip file to somewhere. Then, enter the path.
+
+For static branch prediction simulator
+
+	First, compile the simulator:
+		gcc StaticBranchPrediction.c `pkg-config --cflags --libs glib-2.0` -o StaticBranchPrediction
+
+	    (It maybe appears some warnings but it do not really matter.)
+	    
+	Second, execute the simulator:
+		./StaticBranchPrediction <trace file name> <mode>
+		
+		mode type:taken, not_taken, profile
+
+		For example,
+		(1) Always taken, always not taken
+			./StaticBranchPrediction data.txt taken
+			or
+			./StaticBranchPrediction data.txt not_taken
+
+		(2) Profile guided prediction
+			./StaticBranchPrediction data.txt profile
+
+For two-level correlating predictor
+	
+	First, compile the simulator:
+		javac TwoLevelPredictor.java
+		
+	Second, execute the simulator:
+		java TwoLevelPredictor <trace file name> <number of bits>
+
+		number of bits: 4, 8, 12, 16
+
+		For example,
+			java TwoLevelPredictor data.txt 8
