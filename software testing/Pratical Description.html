@@ -1,0 +1,579 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+<!--DOCTYPE Needs to be the very first thing on the page, or IE 6 goes
+    into quirks mode, rather than standards mode -->
+<!--DOCUMENT STARTS-->
+<!--START:/ssi/doctype.inc-->
+<html>
+<head>
+<!--END:/ssi/doctype.inc-->
+<!--TITLE HERE-->
+
+<TITLE>Informatics Course: Software Testing: Practical</TITLE>
+<!--START:/cgi-bin/metabase-->
+<!-- Metadata information automatically generated -->
+<META NAME="DC.Title" CONTENT="Informatics Course: Software Testing: Practical">
+<META NAME="DC.Creator" CONTENT="Stuart Anderson">
+<META NAME="DC.Creator.Address" CONTENT="soa@inf.ed.ac.uk">
+<META NAME="DC.Publisher" CONTENT="School of Informatics, The University of Edinburgh">
+<!--END:/cgi-bin/metabase-->
+<!--START:/ssi/header.inc-->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<link href="/styles.css" rel="stylesheet" type="text/css" >
+<link rel="icon" href="/images/tinyi.ico" type="image/x-icon" >
+<link rel="shortcut icon" href="/images/tinyi.ico" type="image/x-icon" >
+
+</head>
+
+<body bgcolor="#FFFFFF" >
+<div id="banner">
+<a href="#main" class="skiplink"><img src="/images/spacer.gif" width="1" height="1" border="0" alt="skip navigation"></a>
+<table style="width: 100%; border-style: none; background-color: #005093;" cellpadding="0" cellspacing="0" class="noprint">
+  <tr>
+    <td>
+     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="84" align="left" valign="top"><img src="/images/crest.jpg" alt="The University of Edinburgh"  width="84" height="84" border="0" id="logo" usemap="#logo"></td>
+        <td width="479" align="left" valign="top"><img src="/images/title.jpg" alt="School of Informatics" width="479" height="84" border="0" id="collegetitle" usemap="#title"></td>
+        <td style="background-image: url(/images/logoEnd.jpg);background-repeat: no-repeat;" width="100%"> 
+<div align="left">
+<a target="_top" href="http://www.ed.ac.uk" class="headertext"><img src="/images/arrow.gif" width="16" height="11" border="0" alt=""></a><a target="_top" href="http://www.ed.ac.uk" class="headertext">University Homepage</a><br>
+<a target="_top" href="/" class="headertext"><img src="/images/arrow.gif" width="16" height="11" border="0" alt=""></a><a target="_top" href="/" class="headertext">School Homepage</a><br>
+<a target="_top" href="/about/contact.html" class="headertext"><img src="/images/arrow.gif" width="16" height="11" border="0" alt=""></a><a target="_top" href="/about/contact.html" class="headertext">School Contacts</a><br>
+<a target="_top" href="/search/" class="headertext"><img src="/images/arrow.gif" width="16" height="11" border="0" alt=""></a><a target="_top" href="/search/" class="headertext">School Search</a><br>
+<img src="/images/spacer.gif" width="212" height="1" border="0" alt=""></div>
+
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+
+<map name="logo">
+<area target="_top" href="http://www.ed.ac.uk/" shape="poly" coords="0,0,0,84,83,84,83,83,84,83,84,0,0,0" alt="The University of Edinburgh" title="The University of Edinburgh">
+<area target="_top" href="#main" shape="rect" coords="83,83,84,84" alt="Skip Navigation" title="Skip Navigation">
+</map>
+<map name="title">
+<area target="_top" href="http://www.ed.ac.uk/" shape="rect" coords="9,17,253,33" alt="The University of Edinburgh" title="The University of Edinburgh">
+<area target="_top" href="/" shape="rect" coords="10,42,270,76" alt="School of Informatics" title="School of Informatics">
+</map>
+
+</div> <!-- \banner -->
+<div id="container">
+<a name="main"></a> <!-- might not always be the top of the main content -->
+<!--END:/ssi/header.inc-->
+
+<h1>Software Testing: Practical</h1>
+
+<p>This page describes the practical for the Informatics Software Testing course.  It will be marked out of 100 points, and is worth 25% of the assessment of the course.  This practical will be undertaken in groups, normally of four (or possibly five), and will be assessed on a group report and individual submissions.  This practical should take approximately 20 hours of work from each participant to complete.  If at any time you believe you are likely to exceed this estimate by more than 30% please get in touch with me (<code><a href="mailto:soa@staffmail.ed.ac.uk">soa@staffmail.ed.ac.uk</a></code>) to discuss what can be done.
+</p>
+
+<h2>Deadline</h2>
+<p>You will have an opportunity to get formative feedback on your practical work.  If you submit a draft to me by email on or before Mon 23 February I will provide feedback on the submission by Mon 2 March.  This process will not involve formal assessment and there is no credit allocated to the draft submission.  However, it is an opportunity for you to improve your submission prior to the coursework deadline.  The submission deadline for the practical is: <b>Monday 16 March 2015 at 1600 (week 9 if we do not count Innovative Learning Week)</b>
+</p>
+
+<p> The penalty for late submission follows the uniform policy described in the <a href="http://www.inf.ed.ac.uk/teaching/years/ug3/CourseGuide/coursework.html">UG3 course guide</a>. <strong>Please read that page, and pay particular attention to the section on plagiarism.</strong>
+</p>
+
+<h2>Organisation</h2>
+
+<p>
+For this practical you will be split up, where possible, in groups of 4 or 5. <strong>You should already have recieved notification of the members of your group.</strong>  There are 8 tasks which, depending on the size of your group, you will approach as a group or individually as follows:
+</p>
+
+<ul>
+<li>Tasks 1-3 should be done as a <strong>group activity</strong>. Each group member should then choose one of the other five tasks to tackle <strong>individually</strong>.
+</li>
+</ul>
+<p>
+Each of the first three tasks will count 25% of the final assessment (so the group activity counts 75% of the assessment) and each of the individual tasks will count 25% so each member of the group will be allocated the group score on the group tasks plus their score on the task they tackled individually. 
+</p>
+
+<h2>Deliverables</h2>
+<p>
+The overall goal of this project is to produce a short report on the testing of a small system.  The report should be at most around 20 pages in length, supported by various other technical deliverables (code for tests). It should be split up into a main body and appendices (the number of pages being counted in the total of 20). The main body of the report should consist of an introduction followed by sections describing the results of the group and individual tasks. <b>You should clearly label each individual section with the author's student number so marks can be allocated to the correct individual.</b> The appendices should include numbered screenshots, figures (e.g. a control flow graph) and any small piece of code you would like to refer to from the explanations, and should constitute visual aids to your explanations from the main body of the report. Appendices should be referred to and explained from the main body of the report - any which are not will not be counted towards your final assessment.
+</p>
+
+<p>
+You should be able to complete the tasks described below with around 15-20 hours of effort per group member so each group has a "budget" of 80-100 hours of effort depending on the size of group and your choice.  You should consciously manage that effort.  If you find your group has an individual who is not contributing effectively you can raise any concerns with me and I will take it up with the individual concerned.
+</p>
+
+<h2>Background</h2>
+ 
+<p>
+In this practical you will consider the the JUnit system.  This is constructed to support the unit testing of Java programs.  This is a very widely used system and the source code includes a reasonably good collection of JUnit tests to help ensure developers do not introduce bugs when they develop the system.  Your goal will be to add to the test set and assess the 
+</p>
+
+<h2>Tools</h2>
+
+<p>You can choose either to use the Eclipse IDE or just to use JUnit and other tools standalone; I have no strong preference - many people find the tools available in Eclipse useful (if you haven't used Eclipse before maybe now is the time to give it a try).  You will need some of the following:
+</p>
+
+<ol>
+  <li>If necessary you can <a href="http://junit.org/">download
+  JUnit from here</a>.  If you are using Eclipse it is probably already
+  installed in the IDE.  <a
+  href="http://www.onjava.com/pub/a/onjava/2004/02/04/juie.html">This
+  article</a> is a reasonable introduction to using JUnit with Eclipse,
+  but bear in mind its age: in particular it's focused on JUnit 3.
+  Here's <a
+  href="http://www.ibm.com/developerworks/edu/j-dw-java-junit4.html">a
+  good introduction to JUnit 4</a> (free registration required).
+  </li>
+  <li> You will need some kind of coverage analysis tool:
+  <ul>
+    <li>In Eclipse you can use <a
+    href="http://www.eclemma.org/">EclEmma</a>.  It's easy to install
+    through Eclipse's built in software update mechanism.
+    </li>
+    <li> For stand-alone coverage you should consider something like <a
+    href="http://cobertura.sourceforge.net/">Cobertura</a>.
+    </li>
+	<li>A review of other OpenSource code coverage tools for Java is
+	available <a href="http://java-source.net/open-source/code-coverage">
+	here</a>
+	</li>
+  </ul>
+  </li>
+</ol>
+
+<p> 
+Each of the group tasks has an associated tutorial which will help you prepare for it. Please consult the <a href="tutorial-guidelines.html"> tutorial guidelines</a> and arrange for your tutorials. Good planning and organisation will be necessary- the earlier you do the four tutorials the more time you will have to 
+improve your work on the tasks before the practical deadline!
+</p>
+
+<p> Now you should work through the following activities:
+</p>
+
+<h2>Task 0: Setting Up (1 hr, no credit)</h2>
+
+<p><strong>Preparation:</strong> If you don't have Eclipse installed and want to use it, you should downlaod it and install it.  You can find Eclipse <a href="https://eclipse.org/users/">here</a>.  Once you have installed Eclipse, you should look at the <a href="http://help.eclipse.org/luna/index.jsp?nav=%2F1">tutorial</a>.  Do enough of the "getting started" tutorial that you have JUnit as a project in Eclipse.  You should also <a href="http://www.eclemma.org/installation.html#updatesite">install eclemma</a> if you intend to use it.  You can delay this since it is not essential for the first task.  
+
+You should have a look at the <a href="Resource-folder/tutorials/pr_exercise1.html">preparatory activity 1</a> which covers basic material on the use of Junit.  You should also have a look at the <a href="Resource-folder/tutorials/pr_exercise2.html">preparatory activity 2</a> which provides an overview of what you will work on in the first couple of tasks in the practical.
+</p>
+
+<p>You should spend some time looking at the JUnit project in Eclipse and become familiar with its structure.
+</p>
+
+<p>You should also read all of this Practical specification and create a plan that specifies at least:
+</p>
+
+<ol>
+<li> The allocation of individuals to the individual tasks, i.e. for each of task 4-8 a single individual should be allocated to the task.
+</li>
+<li> When and how much effort you are planning to devote to each of the tasks.  This can be in any form you like but it should be shared 
+by the entire group and should be easy to change.  Remember that not everyone needs to work on all tasks so you might allocate two people to one group task and 
+three to the other two group tasks (this might reduce communication overhead...).
+</li>
+</ol>
+ 
+<p><strong>Deliverables:</strong> The plan and allocation of tasks - this should be an internal document, shared and evolved by the group (not to be submitted
+with the practical).
+</p>
+
+<h2>Task 1: Category-Partition Testing (25 marks, group activity)</h2>
+
+<p><strong>Preparation:</strong> You should thoroughly read and understand section 11.2 of Pezze and Young and 
+<a href="http://dl.acm.org/citation.cfm?doid=62959.62964"> the defining paper on the Category Partition method </a> by Ostrand and Balcer, then get 
+together with your group and do <a href="Resource-folder/tutorials/tutorial1.pdf"> tutorial 1</a>.
+</p>
+
+<p><strong>Tutorial:</strong> Contact the tutor (Cristina Alexandru) for this session to arrange a tutorial meeting as indicated in the <a href="tutorial-guidelines.html">tutorial guidelines</a> 
+</p>
+
+<p>In this task you will generate a test suite in JUnit by first
+constructing test case specifications using the <b>category partition
+approach</b>.  In this task you will test the method
+<code><strong>void</strong> sortStrings(Vector values , int left, int right, Swapper swapper)</code>
+that can be found in <code>junit.runner</code> of the JUnit project.  You should document the
+following parts of the process:
+</p>
+
+<ol>
+  <li>Provide a short specification of the function you are testing by first having a quick look at the code.  This is particularly simple but you should think about what the method needs to work correctly and you should try to develop the specification so it is helpful in devising "black box" tests.  I.e. those that do not need you to use the code to create tests.  This means you need to try to specify the operation of the method without depending on the word "sort". 
+  </li>
+  <li> Provide a brief summary of what you think the ITFs are for this method outlining why you think they are independent.  You need only test one ITF for this practical.  Make it clear what ITF you are testing.  The chosen ITF should be the primary function of the method.
+  </li>
+  <li>Outline the parameters and environment elements you have identified that are relevant to the method. Explain why you are considering each environment element and, in case you dismiss any environment elements, why this is reasonable (try to avoid explanations such as "lack of time to consider more").
+  </li>
+  <li>Identify the characteristics (categories) of the parameters and environment elements which are relevant for testing and why.
+  </li>
+  <li>Identify partitions (choices in Ostrand and Balcer) and value classes for the characteristics (see below for an explanation of the difference between partitions and value classes).
+  </li>
+  <li>Provide a calculation of the initial number of tests.
+  </li>
+  <li>Decide on any constraints on combinations of the value classes you have identified and mark them by using the notation described in the reading.  Here 
+  you should attempt to eliminate as many combinations of value classes that could not occur together in test situations as possible.
+  </li>
+  <li>Provide a new detailed calculation of the number of tests reached after introducing the constraints. Your result should not exceed 20 tests.
+  </li>
+  <li>Outline the test case specification you have arrived at, in the form used in your reading and tutorial. 
+  </li>
+  <li>Outline the actual tests you have chosen (actual values for the specification from the previous point).
+   </li>
+</ol>
+  
+<p>You should then implement your test case specification and test the
+code for the function.  In giving a grade for this part of the practical
+I will take account of the performance of your test set on a collection
+of variants of the method.
+</p>
+
+<p><strong>Deliverables:</strong> 
+</p>
+
+<ol>
+  <li> A section in your report containing your rationale for the tests (the response to the points from above). 
+  </li>
+  <li>A screenshot in appendices with the results of running the tests.
+  </li>
+  <li> A file <code>Task1.java</code> that contains your JUnit tests. 
+  </li>
+</ol>
+
+<h2>Task 2: Coverage Analysis (25 marks, group activity)</h2>
+
+<p><strong>Preparation:</strong> You should read Pezze and Young chapter 12 and then do <a href="Resource-folder/tutorials/tutorial2.pdf">tutorial 2</a> on this topic before arranging your meeting with the tutor.
+</p>
+<p><strong>Tutorial:</strong> Contact the tutor (Donal Stewart) for this session to arrange a tutorial meeting as indicated in the <a href="tutorial-guidelines.html">tutorial guidelines</a>
+</p>
+<p>Using some appropriate coverage tool (please specify which), assess the level of statement coverage
+achieved by your test suite developed in Task 1. Then do the following:
+</p>
+
+<ol>
+
+  <li>Draw a control flow graph for the method (if you use an automatically generated one, it should be readable not just a jumble).
+  </li> 
+  <li>If the statement coverage is below 90%, explain why this is the case with the aid of the control flow graph
+  </li>
+  <li>If you feel that the level of statement coverage can be improved, attempt using the control flow graph to define and implement some additional 
+  tests that will increase the level of coverage.  Reassess the coverage you achieve and compare it with the coverage achieved before you began this exercise.
+  </li>
+  <li> Write a short evaluation of the adequacy of statement coverage as a measure of the adequacy of the test set for this code. Please be specific to the 
+  code by giving examples of covered/uncovered cases for the given problem to support your statements. Refer to the control flow graph where useful.
+  </li>
+  <li> Using the control flow graph and examples for the given problem, provide a short written evaluation of at least one other coverage criterion as a way 
+  of evaluating the adequacy of your test set.  Include in this at least one test case specification (not necessarily the actual test) that this new coverage 
+  criterion might suggest you need to include in your test set.
+  </li>
+</ol>
+
+<p><strong>Deliverables:</strong> 
+</p>
+
+<ol>
+  <li> A section in your report containing your response to the points from above.
+  </li>
+  <li>Screenshots in appendices showing the different levels of coverage you 
+  achieved and the figure of the control flow graph.
+  </li>
+  <li> A file named <code>Task2.java</code> containing any new tests.
+  </li>
+</ol>
+
+<h2>Task 3: Mutation-based Test Adequacy (25 marks, group activity)</h2>
+
+<p> <strong>Preparation:</strong> Read Pezze and Young Chapter 10 on Adequacy and then do <a href="Resource-folder/tutorials/tutorial3.pdf"> tutorial 3 </a> which covers mutation.  This should help to decide how to generate mutants.
+</p>
+<p><strong>Tutorial:</strong> Contact the tutor (Hadi Daneshvar) for this session to arrange a tutorial meeting as indicated in the <a href="tutorial-guidelines.html">tutorial guidelines</a> 
+</p>
+<p> In this section you should consider using mutations to check the adequacy of your test set developed under Task 1.  You should do the following:
+</p>
+
+<ol>
+	<li>  
+	Develop several erroneous variants (or &ldquo;mutations&rdquo;) of
+	the <code>sortStrings</code> method. 
+	</li>
+	<li>
+	Document your chosen types of mutation for each variant.
+	</li>
+        <li>
+	Explain why your test set discovers or fails to discover each mutant.
+	</li>
+	<li>
+	Consider the set of mutants your Task 1 test set fails to discover:
+	<ol>
+	  <li>
+	    If there are no such mutants, can you design a mutant that is not discovered by your test set?  If you think it is impossible to design sucha mutant provide an argument for this.  The argument should be as strong as you can make it. 
+	  </li>
+	  <li>
+	    If you have a mutants that are undiscovered by your test set, can you strengthen the test set to capture all of them.  Notice that some variants of a function do not result in changes of behaviour of the system, even though the code is different.
+	  </li>
+	</ol>
+	</li>
+	<li>
+	  Augument your test set developed in Task 1 to discover as many of the mutants you developed as possible.
+	</li>
+	
+</ol>
+
+<p><strong>Deliverables:</strong>
+</p>
+
+<ol>
+  <li> A number of variants of <code>sortStrings</code>, call the variant files <code>sortStringsVar1.java</code>, <code>sortStringsVar2.java</code>, and so on.
+  </li>
+  <li> A short section in the report on the adequacy of your test set as assessed by mutation testing.  This might include an argument that your code will discover all mutations where a single mutation operation is carried out.
+  </li>
+  <li> You should include a file with an augumented test suite that catches some of the initially undetected mutants.  This could be called <code>Task1-strong.java</code> or something similar.
+  </li>
+  <li>
+  Screenshots in appendices showing how your tests catch/do not catch the mutations.
+  </li>
+</ol>
+
+Tasks 4 - 8 are individual tasks.  They are less tightly described than tasks 1 - 3 and mainly ask you to write a short report.  Once your groups has decided on which individuals are doing which tasks you should contact the tutor (Stuart Anderson) for this session to arrange a tutorial meeting as indicated in the <a href="tutorial-guidelines.html">tutorial guidelines</a>.  This tutorial will cover your questions about the individual tasks in the practical.
+
+
+<h2>Task 4: Integration Testing and Coupling-based Coverage (25 Marks, individual activity)</h2>
+
+<p><strong>Preparation:</strong> You should review the slides for lecture 10 and the slides for Chapters 15 and 21 of Pezze and Young.  Have look at<a href="Resource-folder/tutorials/tutorial4.pdf"> tutorial 4</a>.
+</p>
+
+<p>In this section you will assess the effort required to test the
+integration of a relatively modest system.  Assessing the integration of
+a system like JUnit can be very time consuming.  So, since this is an individual task, you
+are being asked to write a report rather than doing the testing.
+</p>
+
+Inspect the code in the  <code>junit.runner</code> package.  This is a fairly large package and it is at the heart of the JUnit system so in your report <strong>you should not attempt to be exhaustive</strong> Write a short report that:
+
+    <ol>
+      <li>Identifies the main ways in which the classes in <code> junit.runner </code> package are
+      coupled.  Rather than being exhaustive, please identify different kinds of coupling and give examples.  For example, what methods are called, are there shared variables, &hellip;
+      </li>
+      <li>Discusses what would be necessary in a test suite to achieve
+      full statement coverage of the code in the package. 
+      </li>
+      <li>Outline what would be necessary to meet the coupling-based
+      coverage criteria for the classes in the <code>junit.runner</code> package.
+      </li>
+    </ol>
+
+<p><strong>Deliverables:</strong>
+</p>
+
+<ol>
+  <li>A section in your report, labelled individually, exploring coupling between the specified classes.   
+  </li>
+</ol>
+
+<h2>Task 5: Using Coupling-based Coverage (25 Marks, individual activity)</h2>
+
+<p><strong>Preparation:</strong> To prepare for this task you should review the slides for lectures 7 and 8, the slides for chapters 6 and 13 of Pezze and work on <a href="Resource-folder/tutorials/tutorial5.pdf">tutorial 5</a>.
+</p>
+
+<p>For this section only consider the class <code>ClassPathTestCollector</code>
+in the <code>junit.runner</code> package.  You should do the following:
+</p>
+
+<ol>
+
+  <li>Look at how the methods inside the class call one another (drawing the graph of how they call one another might be helpful).</li>
+  <li>Identify the last defs and first uses of variables when one method calls another.
+  <p>Note that in the tutorial we look at coupling through return values
+  as well; that's not necessary here.
+  </p>
+  </li>
+  <li>Work out the coupling paths that must be followed if the test is
+  to conform to the all-coupling-uses coverage criterion.  In describing the
+  paths it is probably easiest to label the lines of code (e.g. by numbering them and then describe the path as a sequence of line numbers in the different functions).
+  </li>
+  <li>Estimate how many different tests you would require to develop an adequate test set to cover your coupling paths.
+  </li>
+  
+</ol>
+
+<p><strong>Deliverables:</strong>
+</p>
+
+<ol>
+  <li>An, individually labelled, section in your report annotating the source of the relevant
+  methods with first use and last defs for the variables in the  <code>ClassPathTestCollector</code> class and identifying the coupling paths.
+  </li>
+  <li> Your report should also estimate the number of tests required to cover all the paths you have identified.
+  </li>
+  <li> If you believe coverage cannot be achieved you should provide an explanation in your report detailing why the coupling-based coverage cannot be met.
+  </li>
+</ol>
+
+
+<h2>Task 6: System Testing (25 marks, individual activity)</h2>
+
+<p><strong>Preparation:</strong> Re-read the lecture slides that list some of the varieties of testing
+you might apply during system testing.  
+</p>
+<p>
+Select the three different kinds
+of system test you consider most appropriate for JUnit.  Investigate the
+best approaches to carrying out these tests on the JUnit system.
+</p>
+
+<p><strong>Deliverables:</strong> 
+A short, individually labelled, section in your report detailing your choice of the three most appropriate system
+testing activities, together with a justification for this choice.  For
+each of the chosen system testing activities, provide a brief outline of
+how you would go about such testing for the JUnit system.  Try to be
+reasonably specific, providing examples of test input and identifying
+what they are intended to test.
+</p>
+
+<h2>Task 7: Database Testing: (25 marks, individual activity) </h2>
+
+<p><strong>Preparation:</strong> One aspect of testing that does not feature in the practical is managing systems that make extensive use of databases (many systems use databases as an important ancillary). <a href="http://dbunit.sourceforge.net">DbUnit</a> is a tool that is designed to handle some aspects of the testing of systems that utilise databases.  Prepare by going to the DbUnit web page and read the Overview documentation to help you understand the facilities DbUnit offers.  
+</p>
+
+<p>
+For this task, you should prepare a short report providing: 
+<ul>
+<li>A overview of the facilities offered by DbUnit.</li>
+<li>A brief overview of an example system that DbUnit would help test.</li>
+<li>An identification of any weaknesses of DbUnit.  Where possible you should provide an example of a weakness.</li>
+</ul>
+
+
+<strong>Note that you are not being asked to provide an exhaustive analysis of the DbUnit approach you should restrict yourself to between one and two pages of text.</strong>
+
+<p>
+<strong>Deliverables:</strong>  A short section in your report providing this review of DbUnit.
+</p>
+
+<h2>Task 8: Project Review (25 Marks, individual activity)</h2>
+<p> 
+The final task is a review of the main activities of the group in completing the practical.  Write a short report on the progress of the group.  Your report should include:
+</p>
+
+<ol>
+
+	<li> The group's plan for the tasks.
+	</li>
+	<li> A review of deviations from the plan in terms of time allocation, degree of completion, sequence, completion dates, ...
+	</li>
+	<li> A short summary of what you see as the successes of the group in project planning and execution.
+	</li>
+	<li> A short list of three or four areas you see room for improvement and suggestions of how you might improve in these areas.
+	</li>
+
+</ol>
+
+<p><strong>Deliverables:</strong>  A section in your report providing a review of the planning of your group's practical work.
+</p>
+
+<h2>Submission of the Practical Work</h2>
+
+<p>After completing the practical you should have the main report and additiona files of tests etc.  It
+will help me with marking if you please exactly adhere to these names.  For other sections if you submit additional files use the naming convention: <samp>Taskn-XXX.ttt</samp> where $n$ is the task number the file relates to and <samp>XXX.ttt</samp> is a descriptive name and file extension.
+(including upper/lower case):
+</p>
+
+<dl>
+  <dt><samp>report.pdf</samp></dt><dd>A report comprising the main body with
+  your written answers to the tasks and appendices (at least 5 pages) with screenshots, figures, any small pieces of code. 
+  The whole report should not exceed 20 pages.
+  </dd>
+  <dt><samp>Task1.java</samp></dt><dd>Your tests for Task 1.
+  </dd>
+  <dt><samp>Task2.java</samp></dt><dd>Your tests for Task 2.
+  </dd>
+</dl>
+
+<p>To submit your work you should designate one member of the group as a submitter for the group.  The report should be clearly labeled with your group 
+number.  The submitter will gather together the files you wish to submit, and execute this command (if for any reason you have not produced one of the listed files you should omit it from the submit command).  The dots at the end of the command signify all the other relevant files:
+</p>
+
+<p><kbd>submit st 1 report.pdf Task1.java Task2.java ...
+</kbd>
+</p>
+
+<h2>Assessment</h2>
+In Weeks 9 and 10 of semester each group will be invited to give a 30 minute presentation of their results where they will have an opportunity to demonstrate 
+the tests they have generated and receive feedback on their work.  Details of the signup process will appear shortly on the web page.
+
+<h2>Questions</h2>
+
+Here are some relevant questions for task 1 and task 2:
+
+<dl>
+  <dt><strong>What's the difference between a partition and a value
+  class?</strong>
+  </dt>
+  <dd>They're essentially the same thing (&ldquo;value class&rdquo;
+  isn't mentioned in Ostrand &amp; Balcer's original paper), but it
+  might be useful to think of partitions as being slightly higher level
+  verbal descriptions (e.g. &ldquo;none&rdquo;, &ldquo;one&rdquo;,
+  &ldquo;several&rdquo;, and &ldquo;very many&rdquo;) corresponding to
+  more technical <em>value classes</em> (e.g. 0, 1, 2-100 and 101+).  In
+  a more complex project this distinction would be more useful.
+  </dd>
+  <dt><strong>Do we need to include our test results?</strong>
+  </dt>
+  <dd>Yes.  Your test case specification should include the results that
+  you <em>expect</em> (c.f. P&amp;Y p.189, Table 11.2).  You should also
+  document the actual results you got.  A brief commentary to the effect
+  that all tests are passed, or that failures occur and why, would be
+  helpful in <strong>demonstrating that you implemented and executed
+  your specification</strong>.
+  </dd>
+  <dt><strong>My statement coverage is over 90%.  What should I do in Task 2?</strong>
+  </dt>
+  <dd>I've talked about different coverage criteria, and how they're
+  related, and <a href="http://dx.doi.org/10.1109/32.6165">Ntafos'
+  paper</a> in the reading gives a good overview of this.  You've just
+  been working with statement coverage.  You should make the case for
+  another coverage criterion, and possibly add one or two test cases to
+  improve your score with that criterion.
+  </dd>
+</dl>
+
+<!--START:/cgi-bin/locationbar-->
+<p>
+<DIV ALIGN=CENTER>
+<img src="/images/page_bar.gif" width="489" height="1" alt="" vspace=5>
+<br>
+<a target="_top" href="/">Home</a>&nbsp;:&nbsp;<a target="_top" href="/teaching/">Teaching</a>&nbsp;:&nbsp;<a target="_top" href="/teaching/courses/">Courses</a>&nbsp;:&nbsp;<a target="_top" href="/teaching/courses/st/">St</a>&nbsp;:&nbsp;<a target="_top" href="/teaching/courses/st/2014-15/">2014-15</a>&nbsp;
+</DIV>
+<p>
+<!--END:/cgi-bin/locationbar-->
+<!--START:/ssi/footer.inc-->
+</div> <!-- end container -->
+<table align="center">
+<tr>
+    <td>
+    <div align="center"><font size="1">Informatics Forum, 10 Crichton Street, Edinburgh, EH8 9AB, Scotland, UK<br>
+        Tel: +44 131 651 5661, Fax: +44 131 651 1426, E-mail: 
+        school-office@inf.ed.ac.uk<br>
+        Please <a href="/about/webmaster.html">contact our webadmin</a> with
+        any comments or corrections. <a style="font-weight: bold" href="/about/cookies.html">Logging and Cookies</a><br>
+        Unless explicitly stated otherwise, all material is copyright &copy;
+        The University of Edinburgh
+    </font></div>
+   </td>
+  </tr>
+</table>
+<!--TRACKING CODE ADDED BY Michael Fourman-->
+<!-- Track with Google Analytics Code -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+// Informatics Tracker
+var pageTracker = _gat._getTracker("UA-220125-3");
+pageTracker._initData();
+pageTracker._trackPageview();
+// ed.ac.uk Tracker
+var pageTracker_ed = _gat._getTracker("UA-3415584-4");
+pageTracker_ed._setDomainName(".ed.ac.uk");
+pageTracker_ed._setAllowHash(false);
+pageTracker_ed._trackPageview();
+} catch(err) {}
+</script>
+<!--END TRACKING CODE ADDED BY Michael Fourman-->
+
+</body>
+</html>
+<!--END:/ssi/footer.inc-->
+<!--DOCUMENT ENDS-->
