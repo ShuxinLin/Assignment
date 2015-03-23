@@ -1,20 +1,21 @@
 /**
  * Created by Shuxin on 2015/3/21.
  */
-
-package sim;
+import java.math.BigInteger;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.io.*;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Map;
-import sim.LRUCache;
 
 public class Simulator {
 
     static int blockSize = 32;  // 32 bytes
     static int addressBits = 48;    // 48 bits = 12(hex)
 
-    public static void cacheSimulator(String filename, int cacheSize, int associativity, String allocation) throws IOException {
+    @SuppressWarnings("resource")
+	public static void cacheSimulator(String filename, int cacheSize, int associativity, String allocation) throws IOException {
 
         //Read the file into buffer
         FileInputStream inputStream = new FileInputStream(filename);
@@ -49,9 +50,9 @@ public class Simulator {
         int tagBits = addressBits - blockOffsetBits - indexBits;
 
         // Simulate cache using LRU replacement policy
-        LRUCache [] cache = new LRUCache[setNum];
+        LRUcache [] cache = new LRUcache[setNum];
         for (int i=0; i<setNum; i++) {
-            cache[i] = new LRUCache(associativity,0.75f);
+            cache[i] = new LRUcache(associativity,0.75f);
         }
 
         // Hit/Miss variables
@@ -60,53 +61,75 @@ public class Simulator {
         int readMiss = 0;
         int writeMiss = 0;
         boolean isMiss = false;
+        int read = 0;
+        int write = 0;
 
         while ((oneLine = file.readLine()) != null) {
-
+        	//System.out.println(oneLine);
+ 
             // Get data
             String command = oneLine.substring(0,1);    // Read or Write
             String address = oneLine.substring(2,oneLine.length());
-
+           
             // Address that are shorter in length should be zero-extended
+            String zero = "0";
             if(address.length() < 12) {
                 int temp = address.length();
                 for (int i=0;i<12-temp;i++) {
-                    address = address + "0";
+                    zero = zero +"0";
+                	
                 }
+                address = zero + address;
             }
-
+            
+            if (command.equals("R")){
+            	read++;
+            } else {
+            	write++;
+            }
+            
             // Decode the block address from raw address
             String binAddress = new BigInteger(address, 16).toString(2);
-            String tag = binAddress.substring(0,tagBits);
-            String index = binAddress.substring(tagBits,tagBits+indexBits);
+           //address= System.out.println( "binAddress "+binAddress);
+            String tag = binAddress.substring(0,binAddress.length()-5-indexBits);
+            //System.out.println( "tag "+tag);
+            String index = binAddress.substring(binAddress.length()-5-indexBits,binAddress.length()-5);
+            //System.out.println( "index "+index);
             int setAddress = Integer.parseInt(index, 2);
+            //System.out.println( "setAddress "+setAddress);
 
             total++;
 
             // Check if Read/Write misses
             if(!(cache[setAddress].isKeyExist(tag))) {
+            	 //System.out.println( "miss ");
                 totalMiss++;
                 isMiss = true;
                 if(command.equals("R")) {   // if Read misses
                     readMiss++;
-                }else if (command.equals("W")) {    // if Write misses
+                } else if (command.equals("W")) {    // if Write misses
                     writeMiss++;
                 }
+            }else {
+            	//System.out.println( "hit ");
             }
 
             // do nothing if Write misses when the policy is write no-allocate
             // otherwise, add tag to the exact set
             if(!(isMiss && command.equals("W") && allocation.equals("wna"))) {
+            	cache[setAddress].remove(tag);
                 cache[setAddress].put(tag, "code");
             }
-
         }
 
         // Print information
+        //System.out.println(readMiss + " "+read);
+        //System.out.println(writeMiss+" "+write);
+        //System.out.println(read+" " +write+" "+total+" ");
         System.out.println("Cache configuration:"+ cacheSize/1024 +"-KB cache, "+associativity+"-way set, "+((allocation.equals("wa"))?"write allocate":"write no-allocate"));
-        System.out.printf("Total miss rate: %.4f\n", (totalMiss + 0.0) / total);
-        System.out.printf("Read miss rate: %.4f\n", (readMiss + 0.0) / total);
-        System.out.printf("Write miss rate: %.4f\n", (writeMiss + 0.0) / total);
+        System.out.printf("Total miss rate: %.4f\n", (totalMiss + 0.0) / (total));
+        System.out.printf("Read miss rate: %.4f\n", (readMiss + 0.0) / read);
+        System.out.printf("Write miss rate: %.4f\n", (writeMiss + 0.0) / write);
 
         file.close();
     }
@@ -124,4 +147,28 @@ public class Simulator {
             cacheSimulator(args[0],cacheSize,associativity,args[3]);
         }
     }
+    
+}
+class LRUcache extends LinkedHashMap<String, String> {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+    private int capacity;
+
+    public LRUcache(int capacity,float loadFactor) {
+        super(capacity,loadFactor,true);
+        this.capacity = capacity;
+    }
+
+    @Override
+    protected boolean removeEldestEntry(Map.Entry<String,String> eldest) {
+        return size() > this.capacity;
+    }
+
+    protected boolean isKeyExist(String key) {
+        return this.containsKey(key);
+    }
+
+   
 }

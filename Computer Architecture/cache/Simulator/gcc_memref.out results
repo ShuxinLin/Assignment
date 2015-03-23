@@ -1,0 +1,250 @@
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 1 wa
+Cache configuration:4-KB cache, 1-way set, write allocate
+Total miss rate: 0.0881
+Read miss rate: 0.1195
+Write miss rate: 0.0258
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 1 wna
+Cache configuration:4-KB cache, 1-way set, write no-allocate
+Total miss rate: 0.1951
+Read miss rate: 0.1202
+Write miss rate: 0.3441
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 2 wa
+Cache configuration:4-KB cache, 2-way set, write allocate
+Total miss rate: 0.0681
+Read miss rate: 0.0974
+Write miss rate: 0.0100
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 2 wna
+Cache configuration:4-KB cache, 2-way set, write no-allocate
+Total miss rate: 0.1694
+Read miss rate: 0.0990
+Write miss rate: 0.3092
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 4 wa
+Cache configuration:4-KB cache, 4-way set, write allocate
+Total miss rate: 0.0640
+Read miss rate: 0.0920
+Write miss rate: 0.0083
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 4 wna
+Cache configuration:4-KB cache, 4-way set, write no-allocate
+Total miss rate: 0.1652
+Read miss rate: 0.0931
+Write miss rate: 0.3085
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 8 wa
+Cache configuration:4-KB cache, 8-way set, write allocate
+Total miss rate: 0.0616
+Read miss rate: 0.0886
+Write miss rate: 0.0080
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 8 wna
+Cache configuration:4-KB cache, 8-way set, write no-allocate
+Total miss rate: 0.1631
+Read miss rate: 0.0898
+Write miss rate: 0.3088
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 16 wa
+Cache configuration:4-KB cache, 16-way set, write allocate
+Total miss rate: 0.0603
+Read miss rate: 0.0868
+Write miss rate: 0.0075
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 4 16 wna
+Cache configuration:4-KB cache, 16-way set, write no-allocate
+Total miss rate: 0.1587
+Read miss rate: 0.0881
+Write miss rate: 0.2992
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 1 wa
+Cache configuration:8-KB cache, 1-way set, write allocate
+Total miss rate: 0.0695
+Read miss rate: 0.0967
+Write miss rate: 0.0156
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 1 wna
+Cache configuration:8-KB cache, 1-way set, write no-allocate
+Total miss rate: 0.1631
+Read miss rate: 0.0970
+Write miss rate: 0.2945
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 2 wa
+Cache configuration:8-KB cache, 2-way set, write allocate
+Total miss rate: 0.0555
+Read miss rate: 0.0803
+Write miss rate: 0.0062
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 2 wna
+Cache configuration:8-KB cache, 2-way set, write no-allocate
+Total miss rate: 0.1472
+Read miss rate: 0.0813
+Write miss rate: 0.2780
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 4 wa
+Cache configuration:8-KB cache, 4-way set, write allocate
+Total miss rate: 0.0527
+Read miss rate: 0.0767
+Write miss rate: 0.0051
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 4 wna
+Cache configuration:8-KB cache, 4-way set, write no-allocate
+Total miss rate: 0.1392
+Read miss rate: 0.0778
+Write miss rate: 0.2612
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 8 wa
+Cache configuration:8-KB cache, 8-way set, write allocate
+Total miss rate: 0.0517
+Read miss rate: 0.0754
+Write miss rate: 0.0047
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 8 wna
+Cache configuration:8-KB cache, 8-way set, write no-allocate
+Total miss rate: 0.1381
+Read miss rate: 0.0765
+Write miss rate: 0.2607
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 16 wa
+Cache configuration:8-KB cache, 16-way set, write allocate
+Total miss rate: 0.0513
+Read miss rate: 0.0748
+Write miss rate: 0.0045
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 8 16 wna
+Cache configuration:8-KB cache, 16-way set, write no-allocate
+Total miss rate: 0.1378
+Read miss rate: 0.0758
+Write miss rate: 0.2610
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 1 wa
+Cache configuration:16-KB cache, 1-way set, write allocate
+Total miss rate: 0.0561
+Read miss rate: 0.0792
+Write miss rate: 0.0102
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 1 wna
+Cache configuration:16-KB cache, 1-way set, write no-allocate
+Total miss rate: 0.1311
+Read miss rate: 0.0793
+Write miss rate: 0.2340
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 2 wa
+Cache configuration:16-KB cache, 2-way set, write allocate
+Total miss rate: 0.0457
+Read miss rate: 0.0668
+Write miss rate: 0.0038
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 2 wna
+Cache configuration:16-KB cache, 2-way set, write no-allocate
+Total miss rate: 0.1168
+Read miss rate: 0.0675
+Write miss rate: 0.2148
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 4 wa
+Cache configuration:16-KB cache, 4-way set, write allocate
+Total miss rate: 0.0441
+Read miss rate: 0.0647
+Write miss rate: 0.0032
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 4 wna
+Cache configuration:16-KB cache, 4-way set, write no-allocate
+Total miss rate: 0.1121
+Read miss rate: 0.0654
+Write miss rate: 0.2050
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 8 wa
+Cache configuration:16-KB cache, 8-way set, write allocate
+Total miss rate: 0.0435
+Read miss rate: 0.0640
+Write miss rate: 0.0029
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 8 wna
+Cache configuration:16-KB cache, 8-way set, write no-allocate
+Total miss rate: 0.1131
+Read miss rate: 0.0648
+Write miss rate: 0.2092
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 16 wa
+Cache configuration:16-KB cache, 16-way set, write allocate
+Total miss rate: 0.0435
+Read miss rate: 0.0639
+Write miss rate: 0.0029
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 16 16 wna
+Cache configuration:16-KB cache, 16-way set, write no-allocate
+Total miss rate: 0.1103
+Read miss rate: 0.0647
+Write miss rate: 0.2011
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 1 wa
+Cache configuration:32-KB cache, 1-way set, write allocate
+Total miss rate: 0.0449
+Read miss rate: 0.0644
+Write miss rate: 0.0060
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 1 wna
+Cache configuration:32-KB cache, 1-way set, write no-allocate
+Total miss rate: 0.0980
+Read miss rate: 0.0646
+Write miss rate: 0.1645
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 2 wa
+Cache configuration:32-KB cache, 2-way set, write allocate
+Total miss rate: 0.0374
+Read miss rate: 0.0550
+Write miss rate: 0.0024
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 2 wna
+Cache configuration:32-KB cache, 2-way set, write no-allocate
+Total miss rate: 0.0877
+Read miss rate: 0.0555
+Write miss rate: 0.1519
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 4 wa
+Cache configuration:32-KB cache, 4-way set, write allocate
+Total miss rate: 0.0354
+Read miss rate: 0.0524
+Write miss rate: 0.0017
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 4 wna
+Cache configuration:32-KB cache, 4-way set, write no-allocate
+Total miss rate: 0.0749
+Read miss rate: 0.0529
+Write miss rate: 0.1186
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 8 wa
+Cache configuration:32-KB cache, 8-way set, write allocate
+Total miss rate: 0.0343
+Read miss rate: 0.0508
+Write miss rate: 0.0016
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 8 wna
+Cache configuration:32-KB cache, 8-way set, write no-allocate
+Total miss rate: 0.0752
+Read miss rate: 0.0512
+Write miss rate: 0.1228
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 16 wa
+Cache configuration:32-KB cache, 16-way set, write allocate
+Total miss rate: 0.0337
+Read miss rate: 0.0499
+Write miss rate: 0.0015
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 32 16 wna
+Cache configuration:32-KB cache, 16-way set, write no-allocate
+Total miss rate: 0.0742
+Read miss rate: 0.0503
+Write miss rate: 0.1219
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 1 wa
+Cache configuration:64-KB cache, 1-way set, write allocate
+Total miss rate: 0.0356
+Read miss rate: 0.0523
+Write miss rate: 0.0024
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 1 wna
+Cache configuration:64-KB cache, 1-way set, write no-allocate
+Total miss rate: 0.0716
+Read miss rate: 0.0529
+Write miss rate: 0.1089
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 2 wa
+Cache configuration:64-KB cache, 2-way set, write allocate
+Total miss rate: 0.0307
+Read miss rate: 0.0454
+Write miss rate: 0.0013
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 2 wna
+Cache configuration:64-KB cache, 2-way set, write no-allocate
+Total miss rate: 0.0643
+Read miss rate: 0.0458
+Write miss rate: 0.1012
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 4 wa
+Cache configuration:64-KB cache, 4-way set, write allocate
+Total miss rate: 0.0289
+Read miss rate: 0.0429
+Write miss rate: 0.0010
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 4 wna
+Cache configuration:64-KB cache, 4-way set, write no-allocate
+Total miss rate: 0.0505
+Read miss rate: 0.0432
+Write miss rate: 0.0649
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 8 wa
+Cache configuration:64-KB cache, 8-way set, write allocate
+Total miss rate: 0.0281
+Read miss rate: 0.0418
+Write miss rate: 0.0009
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 8 wna
+Cache configuration:64-KB cache, 8-way set, write no-allocate
+Total miss rate: 0.0487
+Read miss rate: 0.0422
+Write miss rate: 0.0616
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 16 wa
+Cache configuration:64-KB cache, 16-way set, write allocate
+Total miss rate: 0.0279
+Read miss rate: 0.0415
+Write miss rate: 0.0009
+susie@susie-Lenovo-IdeaPad-Y470:/media/susie/private$ java Simulator gcc_memref.out 64 16 wna
+Cache configuration:64-KB cache, 16-way set, write no-allocate
+Total miss rate: 0.0480
+Read miss rate: 0.0418
+Write miss rate: 0.0602

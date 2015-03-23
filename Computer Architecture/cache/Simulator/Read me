@@ -1,0 +1,19 @@
+To run the simulator:
+
+Extract the zip file to somewhere. Then, enter the path.
+	
+	First, compile the simulator:
+		javac Simulator.java
+		
+	Second, execute the simulator:
+		java Simulator <trace file> <cache size/kB> <associativity> <allocation>
+		
+		trace file:gcc_memref.out mcf_memref.out
+		cache size: 4 8 16 32 64
+		associativity: 1 2 4 8 16
+		allocation: wa wna 
+			-wa: write allocate
+			-wna:write no-allocate
+		
+		For example,
+			java Simulator mcf_memref.out 32 16 wa
