@@ -1,4 +1,4 @@
-Output directory：/user/s1469577/
+Output directory：/user/s1469577/ex2/
 
 Task 1 code begin
 
