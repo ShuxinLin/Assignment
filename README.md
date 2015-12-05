@@ -12,7 +12,7 @@ My assignment when I study in University of Edinburgh
 
 ## Year 4 
 - Extreme Computing
-- Distribute Systems
+- Distributed Systems
 - Machine Learning and Pattern Recognition
 - Game Theory and its Application
 - Software Architecture, Process, and Management
